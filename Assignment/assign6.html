@@ -4,8 +4,49 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+        body{
+            width: 100vw;
+            height: 100vh;
+        }
+        #div{
+            background-color: darkblue;
+            display: flex;
+            justify-content: end;
+            padding-right: 20px;
+        }
+        ul{
+            display: flex;
+            gap: 10px;
+            list-style: none;
+            background-color: white;
+            color: grey;
+            justify-content: end;
+            padding-right: 20px;
+        }
+        img{
+            width: 100vw;
+            height: 40vh;
+            object-fit:fill;
+            position: relative;
+        }
+
+    </style>
 </head>
 <body>
+    <header>
+        <div id="div"><input type="button" value="login" style="border: none; background-color: darkblue; color: white;">
+        <input type="button" value=" Register" style="border: none; background-color:darkblue; color: white;"></div>
+        <nav>
+            <ul>
+                <li>HOME</li>
+                <li>COURSES</li>
+                <li>GALLERY</li>
+                <li>CONTACT</li>
+            </ul>
+        </nav>
+    </header>
+    <img src="./1.jpeg" alt="image">
     
 </body>
 </html>
