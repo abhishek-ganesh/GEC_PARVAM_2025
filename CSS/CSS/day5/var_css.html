@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        :root{
+            --aqua:aqua;
+            --green:green;
+            
+        }
+        .ptag{
+            background-color: var(--aqua);
+
+        }
+        .divtag{
+            --green:red;
+            background-color: var(--green);
+        }
+        .container{
+            margin: 20px auto;
+            border: 2px solid blue;
+            width: 50vw;
+            height: 30vh;
+
+        }
+        .child{
+            border: 2px solid brown;
+            width: 50px;
+            height: 50px;
+
+        }
+        .fir{
+            background-color: blueviolet;
+
+        }
+        .sec{
+            background-color: aqua;
+            position: absolute;
+            top: 10px;
+            left: 10px;
+
+        }
+
+
+    </style>
+</head>
+<body>
+    <p class="ptag">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam porro nesciunt culpa fugiat recusandae nulla architecto facilis. Excepturi sint quisquam rerum atque harum, eveniet, illum neque dolor reiciendis esse nobis.</p>
+    <div class="divtag">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla necessitatibus, aliquam distinctio enim qui sed accusamus ea earum magni velit animi quia omnis veritatis. Quia dignissimos quod perspiciatis expedita reiciendis?
+    </div>
+    <p class="ptag">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam porro nesciunt culpa fugiat recusandae nulla architecto facilis. Excepturi sint quisquam rerum atque harum, eveniet, illum neque dolor reiciendis esse nobis.</p>
+    <div class="divtag">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla necessitatibus, aliquam distinctio enim qui sed accusamus ea earum magni velit animi quia omnis veritatis. Quia dignissimos quod perspiciatis expedita reiciendis?
+    </div>
+
+    <div class="container">
+        <div class="child fir">1</div>
+        <div class="child sec">2</div>
+
+    </div>
+
+</body>
+</html>

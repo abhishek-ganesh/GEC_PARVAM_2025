@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            margin: 30px;
+        }
+        .container{
+            width: 90vw;
+            height: 90vh; 
+            position: relative;
+            margin: 30px 100px;
+            border: 2px solid brown;
+        }
+        .div{
+            width: 30vw;
+            height: 50px;
+            border: 2px solid black;
+
+        }
+        .fir{
+            background-color: aqua;
+            position: relative;
+            top: 100px;
+            left: 200px;
+            z-index: 4;
+        }
+        .sec{
+            background-color: blue;
+            position: absolute;
+            top: 0;
+            right: 20px;
+        }
+        .thi{
+            background-color:  aquamarine;
+            position: fixed;
+            z-index: 2;
+        }
+        .fou{
+            background-color:blueviolet;
+            position: sticky;
+            top: 500px;
+            
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="div fir">1</div>
+        <div class="div sec">2</div>
+        <div class="div thi">3</div>
+        <div class="div fou">4</div>
+    </div>
+
+    
+</body>
+</html>

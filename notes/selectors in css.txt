@@ -1,0 +1,63 @@
+selectors in css
+
+1.ele selector=p
+html
+<p> tags</p>
+
+style.css
+p
+{
+color:red;
+}
+
+2.id selector=div
+
+html
+<div id="div"
+hello
+</div>
+
+css
+#div{
+color:green;
+}
+
+3.class selector= class
+html
+<p class="ptag">
+ptag
+</pag>
+
+css
+.ptag{
+font-size=20px;
+}
+
+
+4.universal=*
+html
+
+css
+*{
+bg-color:yellow;
+}
+
+
+5.group selector = p,div,h1
+
+html
+
+css
+p,div,h1{  
+
+}
+
+6.attribute selector= input[type="text"]
+html
+<input type='text" />
+
+css
+input[type="text"]{
+
+
+}		

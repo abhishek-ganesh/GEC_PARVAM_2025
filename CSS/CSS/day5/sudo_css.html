@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .atag::selection{
+            color: red;
+            background-color: yellow;
+        }
+        .atag{
+            text-decoration: none;
+            margin-left: 20px;
+        }
+        .atag:hover{
+            color: wheat;
+            
+        }
+        .atag::after{
+            content: "h";
+        }
+
+        .atag::before{
+            content: "i";
+        }
+        .fir::first-letter{
+            font-size: 40px;
+            color: red;
+        }
+        .fir::first-line{
+            color: blue;
+        }
+    </style>
+
+
+</head>
+
+<body>
+    <div class="container">
+        <div class="nav">
+            <a href="" class="atag">Home</a>
+            <a href="" class="atag">About</a>
+            <a href="" class="atag">Contact</a>
+         </div>
+        <p class="fir">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptatem aspernatur magnam incidunt libero quam, non beatae optio cumque, voluptate alias tempore eligendi sunt placeat cupiditate distinctio ipsam, officia necessitatibus excepturi.</p>
+        
+
+    </div>
+</body>
+</html>

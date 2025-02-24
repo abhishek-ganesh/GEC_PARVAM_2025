@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+   <form action="#" method="post">
+        <h1>Student Registration Form</h1>
+
+        <fieldset>
+            <legend>Personal Information</legend>
+
+        <label for="text">Name:</label>
+        <input type="text" name="Name" id="text" placeholder="enter your name" required><br><br>
+
+        <label for="email">Email:</label>
+        <input type="email" name="email" id="email" placeholder="enter your email" required><br><br>
+
+        <label for="number">phone</label>
+        <input type="number" name="number" id="number" placeholder="enter your phone number"><br><br>
+
+        <label for="file">Upload your Photo:</label>
+        <input type="file" name="file" id="file" accept=".jpg"><br><br>
+
+        <label for="radio">Gender</label><br>
+        <label for="male">Male</label>
+        <input type="radio" name="Gender" id="male">
+        <label for="female">Female</label>
+        <input type="radio" name="Gender" id="female"><br><br>
+
+        <label for="image">image</label>
+        <img src="./dodge.jpg" alt="image is unavailable" style="height: 100px; width: 200px;"><br><br>
+
+        <label for="range">CGPA</label>
+        <input type="range" name="range" id="range" min="0" max="10"><br><br>
+
+        <label for="tel">tel</label>
+        <input type="tel" name="tel" id="tel"><br><br>
+
+        <label for="url">LinkedIn</label>
+        <input type="url" name="url" id="url" placeholder="enter LinkedIn profile url"><br><br>
+
+    </fieldset><br><br>
+
+       <iframe src="./terms and conditions.txt" frameborder="5"></iframe><br>
+
+        <label for="checkbox">i have read this terms and conditions</label>
+        <input type="checkbox" name="checkbox" id="checkbox" required><br><br>
+
+        <label for="password">Password:</label><br>
+        <input type="password" name="password" id="password" placeholder="create password"><br><br>
+
+        <label for="date">date</label>
+        <input type="date" name="date" id="date" required><br><br>
+
+        <!-- <button type="button">ACCEPT</button> -->
+
+        <label for="submit"></label>
+        <input type="submit" name="submit" id="submit">
+
+        <label for="reset"></label>
+        <input type="reset" name="reset" id="reset"><br><br>
+
+        <label for="search"></label>
+        <input type="text" name="query" id="search">
+        <button type="submit">search</button><br><br>
+
+        <label for="textarea">Message(optional)</label>
+        <textarea name="textarea" id="textarea" cols="30" rows="10"></textarea>
+    </form>
+</body>
+</html>

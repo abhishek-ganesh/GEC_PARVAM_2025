@@ -1,0 +1,47 @@
+.border{
+    color: blue;
+    background-color: aqua;
+    border: 5px solid black;
+}
+.margin{
+    margin-top:20px;
+    margin-right:20px;
+    margin-bottom:20px;
+    margin-left:20px;
+}
+.padding{
+    
+    color: chartreuse;
+    background-color: black;
+    /* padding-top: 20px;
+    padding-right: 20px;
+    padding-bottom: 20px;
+    padding-left: 20px; */
+    /* padding: 20px; */
+    padding-inline: 20px;
+    padding-block: 20px;
+}
+
+.bg{
+    /* background-color: red; */
+    width: 100%;
+    height: 400px;
+}
+.bg p{
+    width: 90%;
+    height: 90%;
+    background-image: url("./nat3.webp");
+    background-position: right top;
+    background-repeat: no-repeat;
+    /* background-attachment: fixed; */
+    background-clip: border-box; 
+    opacity: 80%;
+}
+
+p{
+    background-repeat: no-repeat;
+    /* background-clip: border-box; */
+    /* background-clip: padding-box; */
+    /* background-clip: content-box;  */
+} 
+

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        .container{
+            width: 400px;
+            height: 200px;
+            background-color: aqua;
+            display: flex;
+            align-items: center;
+            text-align: center;
+            justify-content: space-around;
+            flex-wrap:wrap-reverse;
+            flex-direction: column;
+            
+            
+            /* gap: 8px; */
+            
+        }
+        .child{
+            height: 20px;
+            width: 20px;
+            background-color: wheat;
+            border: 2px solid brown;
+            padding: 10px;
+        }
+        /* .first{
+            align-self:flex-start
+        }
+    
+        .third{
+            align-self: flex-end;
+        }
+        .five{
+            align-self: flex-start;
+        } */
+
+
+    </style>
+</head>
+<body>
+    <h1>hello this is flexmin css</h1>
+    <div class="container">
+        <!-- to write this div{$}*5 -->
+    <div class="child first">1</div>
+    <div class="child second">2</div>
+    <div class="child third">3</div>
+    <div class="child four">4</div>
+    <div class="child five">5</div>
+    <div class="child six">6</div>
+    </div>
+</body>
+</html>

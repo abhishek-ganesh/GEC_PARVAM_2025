@@ -1,0 +1,11 @@
+git
+1. git clone "url"
+2. git status
+3. git add./git add file_name
+4. git commit-m"message"
+5. git push origin(local repo) main(branch)
+6. git pull origin main
+
+to config
+1. git config --global user.name "username"
+1. git config --global user.email "email"

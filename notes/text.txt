@@ -1,0 +1,6 @@
+p{
+outline:2px solid black;
+text-align: center/left/right;
+text-decoration:underline/line-through/none;
+text-transform: uppercase/capitalize/lowercase;
+}
