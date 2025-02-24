@@ -24,29 +24,50 @@
             justify-content: end;
             padding-right: 20px;
         }
-        img{
+        img.a{
             width: 100vw;
             height: 40vh;
             object-fit:fill;
             position: relative;
         }
-
+        img.b{
+            margin: 100px 0px 70px 150px;
+            width: 500px;
+        }
     </style>
 </head>
 <body>
     <header>
-        <div id="div"><input type="button" value="login" style="border: none; background-color: darkblue; color: white;">
-        <input type="button" value=" Register" style="border: none; background-color:darkblue; color: white;"></div>
+        <div id="div">
+        <a href=""><input type="button" value="login" style="border: none; background-color: darkblue; color: white;"></a>
+        <a href=""><input type="button" value=" Register" style="border: none; background-color:darkblue; color: white;"></a>
+    </div>
         <nav>
             <ul>
-                <li>HOME</li>
-                <li>COURSES</li>
-                <li>GALLERY</li>
-                <li>CONTACT</li>
+                <li><a href="">HOME</a></li>
+                <li><a href="">COURSES</a></li>
+                <li><a href="">GALLERY</a></li>
+                <li><a href="">CONTACT</a></li>
             </ul>
         </nav>
     </header>
-    <img src="./1.jpeg" alt="image">
+    <img class="a" src="./1.jpeg" alt="image 1">
+    <img class="b" src="./2.jpeg" alt="image 2">
+
+    <div class="dept">
+        <div class="dept me">
+            <img src="./3.jpeg" alt="">
+            <p class="a">Department of Mechanical Engineering (ME)</p>
+            <p class="b">Faculty of ME 4 years</p>
+        </div>
+        <div class="dept ipe"></div>
+        <div class="dept ce"></div>
+        <div class="dept ipee"></div>
+        <div class="dept eee"></div>
+        <div class="dept bme"></div>
+
+
+    </div>
     
 </body>
 </html>
