@@ -4,70 +4,350 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <style>
-        body{
-            width: 100vw;
-            height: 100vh;
-        }
-        #div{
-            background-color: darkblue;
-            display: flex;
-            justify-content: end;
-            padding-right: 20px;
-        }
-        ul{
-            display: flex;
-            gap: 10px;
-            list-style: none;
-            background-color: white;
-            color: grey;
-            justify-content: end;
-            padding-right: 20px;
-        }
-        img.a{
-            width: 100vw;
-            height: 40vh;
-            object-fit:fill;
-            position: relative;
-        }
-        img.b{
-            margin: 100px 0px 70px 150px;
-            width: 500px;
-        }
-    </style>
+
+    <link rel="stylesheet" href="assign6.css">
 </head>
 <body>
+
+
+    <!-- page 1 -->
+
+
     <header>
-        <div id="div">
-        <a href=""><input type="button" value="login" style="border: none; background-color: darkblue; color: white;"></a>
-        <a href=""><input type="button" value=" Register" style="border: none; background-color:darkblue; color: white;"></a>
-    </div>
-        <nav>
-            <ul>
-                <li><a href="">HOME</a></li>
-                <li><a href="">COURSES</a></li>
-                <li><a href="">GALLERY</a></li>
-                <li><a href="">CONTACT</a></li>
-            </ul>
-        </nav>
-    </header>
-    <img class="a" src="./1.jpeg" alt="image 1">
-    <img class="b" src="./2.jpeg" alt="image 2">
-
-    <div class="dept">
-        <div class="dept me">
-            <img src="./3.jpeg" alt="">
-            <p class="a">Department of Mechanical Engineering (ME)</p>
-            <p class="b">Faculty of ME 4 years</p>
+        <div id="login">
+            <a href=""><input type="button" value="login" style="border: none; background-color: darkblue; color: white; font-size: 15px;"></a>
+            <a href=""><input type="button" value=" Register" style="border: none; background-color:darkblue; color: white; font-size: 15px; margin-right: 130px;"></a>
         </div>
-        <div class="dept ipe"></div>
-        <div class="dept ce"></div>
-        <div class="dept ipee"></div>
-        <div class="dept eee"></div>
-        <div class="dept bme"></div>
+        <div class="sec_col">
+            <div class="sec_stu">
+                <p style="padding-left: 150px; font-size: 30px; color: darkgreen;"><b>STUDY</b></p>
+            </div>
 
+            <div class="navi">
+                <nav>
+                    <ul>
+                        <li><a href="" style="text-decoration: none; color: gray;">HOME</a></li>
+                        <li><a href="" style="text-decoration: none; color: gray;">COURSES</a></li>
+                        <li><a href="" style="text-decoration: none; color: gray;">GALLERY</a></li>
+                        <li><a href="" style="margin-right: 170px; text-decoration: none; color: gray;">CONTACT</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
 
+    <div id="overl">
+        <p class="a" style="font-size: larger;">Welcome to study</p>
+        <p class="b"><b>The Best Learning Institution</b></p>
+        <pre class="c" style="font-family: 'Times New Roman', Times, serif;">   There are many variations of passages of lorem ipsum available.but the majority have suffered alteration in some form, 
+    by injection humour. or randomised words which don't look even slightly believable</pre>
+        <div class="course"> VIEW COURSES</div>
     </div>
-    
+
+    <div id="sec"><img class="b" src="./assign6_img/2.jpeg" alt="image 2">
+        
+        <div>
+            <p style="font-size: xx-large; margin-bottom: 0px;">About Study</p>
+            <pre style="font-family: 'Times New Roman', Times, serif;">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nostrum eum, dolore praesentium veniam 
+enim est impedit laboriosam velit voluptatibus ducimus voluptas blanditiis facere minima consectetur 
+facilis autem obcaecati! Exercitationem, aliquam.</pre>
+            <div class="learn"> LEARN NOW</div>
+        </div>
+    </div>
+
+    <div class="our_dept">
+        <p class="our_deptn"><center>OUR DEPARTMENT</center></p>
+        <P class="dept_desc"><center><small>There are many variations of passages of lorem ipsum</small></center></P>
+        <br><br>
+    </div>
+
+    <div class="dept_container">
+        <div class="dept_me">
+            <img src="./assign6_img/3.jpeg" alt="" width="400px" height="200px">
+            <p class="depta" style="padding-left:  10px; font-family: 'Times New Roman', Times, serif;">Department of Mechanical Engineering (ME)</p>
+            <p class="deptb" style="padding-left:  10px; font-family: 'Times New Roman', Times, serif; color: gray;">Faculty of ME 4 years</p>
+        </div>
+
+
+        <div class="dept_ipe">
+            <img src="./assign6_img/4.jpeg" alt="" width="400px" height="200px">
+            <p class="depta" style="padding-left:  10px; font-family: 'Times New Roman', Times, serif;">Department of Industrial and Production Engineering (IPE)</p>
+            <p class="deptb" style="padding-left:  10px; font-family: 'Times New Roman', Times, serif; color: gray;">Faculty of IPE 4 years</p>
+        </div>
+        <div class="dept_ce">
+            <img src="./assign6_img/5.jpeg" alt="" width="400px" height="200px">
+            <p class="depta" style="padding-left:  10px; font-family: 'Times New Roman', Times, serif;">Department of Civil Engineering (CE)</p>
+            <p class="deptb" style="padding-left:  10px; font-family: 'Times New Roman', Times, serif; color: gray;">Faculty of CE 4 years</p>
+        </div>
+        <div class="dept_ipee">
+            <img src="./assign6_img/6.jpeg" alt="" width="400px" height="200px">
+            <p class="depta" style="padding-left:  10px; font-family: 'Times New Roman', Times, serif;">Department of Industrial and Production Engineering (IPE)</p>
+            <p class="deptb"  style="padding-left:  10px; font-family: 'Times New Roman', Times, serif; color: gray;">Faculty of IPE 4 years</p>
+        </div>
+        <div class="dept_eee">
+            <img src="./assign6_img/7.jpeg" alt="" width="400px" height="200px">
+            <p class="depta"  style="padding-left:  10px; font-family: 'Times New Roman', Times, serif;">Department of Electrical and Electronics Engineering (EEE)</p>
+            <p class="deptb"  style="padding-left:  10px; font-family: 'Times New Roman', Times, serif; color: gray;">Faculty of EEE 4 years</p>
+        </div>
+        <div class="dept_bme">
+            <img src="./assign6_img/8.jpeg" alt="" width="400px" height="200px">
+            <p class="depta" style="padding-left:  10px; font-family: 'Times New Roman', Times, serif;">Department of Biomedical Engineering (BME)</p>
+            <p class="deptb" style="padding-left:  10px; font-family: 'Times New Roman', Times, serif; color: gray;">Faculty of BME 4 years</p>
+        </div>
+    </div>
+
+    <footer>
+        <div class="foot">
+            <div class="stu">
+                <p style="font-size: 30px;">Study</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem officiis tenetur maxime repellat asperiores</p>
+            </div>
+        
+            <div class="get">
+                <p>GET IN TOUCH</p>
+                <P>+919988775214</P>
+                <P>www.devitems.com</P>
+                <p>ur addrress goes here,street</p>
+            </div>
+        </div>
+        <hr style="color: brown;">
+        <div class="last">
+            <pre style="font-family: 'Times New Roman', Times, serif;">& 2022 study. Made with heart By Abhishek Ganesh                                                                                                                                                               Privacy Policy,Terms & conditions</pre>
+        </div>
+    </footer>
+
+
+
+<!-- page 2 -->
+
+    <header>
+        <div class="fir">
+            <!-- <div id="query">
+                <p>Have any questions? +919256564789</p>
+            </div> -->
+            <div id="login">
+                <a href=""><input type="button" value="login" style="border: none; background-color: darkblue; color: white; font-size: 15px;"></a>
+                <a href=""><input type="button" value=" Register" style="border: none; background-color:darkblue; color: white; font-size: 15px; margin-right: 130px;"></a>
+            </div>
+        </div>
+        <div class="sec_col">
+            <div class="sec_stu">
+                <p style="padding-left: 150px; font-size: 30px; color: darkgreen;"><b>STUDY</b></p>
+            </div>
+            <div class="sec_col">
+                <div class="navi">
+                    <nav>
+                        <ul>
+                            <li><a href="" style="text-decoration: none; color: gray;">HOME</a></li>
+                            <li><a href="" style="text-decoration: none; color: gray;">COURSES</a></li>
+                            <li><a href="" style="text-decoration: none; color: gray;">GALLERY</a></li>
+                            <li><a href="" style="margin-right: 170px; text-decoration: none; color: gray;">CONTACT</a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+    </header>       
+
+        <div class="our_dept">
+            <p class="our_deptn"><center>OUR DEPARTMENT</center></p>
+            <P class="dept_desc"><center><small>There are many variations of passages of lorem ipsum</small></center></P>
+            <br><br>
+        </div>
+        
+        <div class="dept_container">
+            <div class="dept_me">
+                <img src="./assign6_img/3.jpeg" alt="" width="400px" height="200px">
+                <p class="depta" style="padding-left:  10px; font-family: 'Times New Roman', Times, serif;">Department of Mechanical Engineering (ME)</p>
+                <p class="deptb" style="padding-left:  10px; font-family: 'Times New Roman', Times, serif; color: gray;">Faculty of ME 4 years</p>
+            </div>
+            <div class="dept_ipe">
+                <img src="./assign6_img/4.jpeg" alt="" width="400px" height="200px">
+                <p class="depta" style="padding-left:  10px; font-family: 'Times New Roman', Times, serif;">Department of Industrial and Production Engineering (IPE)</p>
+                <p class="deptb" style="padding-left:  10px; font-family: 'Times New Roman', Times, serif; color: gray;">Faculty of IPE 4 years</p>
+            </div>
+            <div class="dept_ce">
+                <img src="./assign6_img/5.jpeg" alt="" width="400px" height="200px">
+                <p class="depta" style="padding-left:  10px; font-family: 'Times New Roman', Times, serif;">Department of Civil Engineering (CE)</p>
+                <p class="deptb" style="padding-left:  10px; font-family: 'Times New Roman', Times, serif; color: gray;">Faculty of CE 4 years</p>
+            </div>
+            <div class="dept_ipee">
+                <img src="./assign6_img/6.jpeg" alt="" width="400px" height="200px">
+                <p class="depta" style="padding-left:  10px; font-family: 'Times New Roman', Times, serif;">Department of Industrial and Production Engineering (IPE)</p>
+                <p class="deptb"  style="padding-left:  10px; font-family: 'Times New Roman', Times, serif; color: gray;">Faculty of IPE 4 years</p>
+            </div>
+            <div class="dept_eee">
+                <img src="./assign6_img/7.jpeg" alt="" width="400px" height="200px">
+                <p class="depta"  style="padding-left:  10px; font-family: 'Times New Roman', Times, serif;">Department of Electrical and Electronics Engineering (EEE)</p>
+                <p class="deptb"  style="padding-left:  10px; font-family: 'Times New Roman', Times, serif; color: gray;">Faculty of EEE 4 years</p>
+            </div>
+            <div class="dept_bme">
+                <img src="./assign6_img/8.jpeg" alt="" width="400px" height="200px">
+                <p class="depta" style="padding-left:  10px; font-family: 'Times New Roman', Times, serif;">Department of Biomedical Engineering (BME)</p>
+                <p class="deptb" style="padding-left:  10px; font-family: 'Times New Roman', Times, serif; color: gray;">Faculty of BME 4 years</p>
+            </div>
+        </div>
+
+    <footer>
+        <div class="foot">
+            <div class="stu">
+                <p style="font-size: 30px;">Study</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem officiis tenetur maxime repellat asperiores</p>
+            </div>
+        
+            <div class="get">
+                <p>GET IN TOUCH</p>
+                <P>+919988775214</P>
+                <P>www.devitems.com</P>
+                <p>ur addrress goes here,street</p>
+            </div>
+        </div>
+        <hr style="color: brown;">
+        <div class="last">
+            <pre style="font-family: 'Times New Roman', Times, serif;">& 2022 study. Made with heart By Abhishek Ganesh                                                                                                                                                               Privacy Policy,Terms & conditions</pre>
+        </div>
+    </footer>
+
+
+    <!-- page 3 -->
+
+
+    <header>
+        <div class="fir">
+            <!-- <div id="query">
+                <p>Have any questions? +919256564789</p>
+            </div> -->
+            <div id="login">
+                <a href=""><input type="button" value="login" style="border: none; background-color: darkblue; color: white; font-size: 15px;"></a>
+                <a href=""><input type="button" value=" Register" style="border: none; background-color:darkblue; color: white; font-size: 15px; margin-right: 130px;"></a>
+            </div>
+        </div>
+        <div class="sec_col">
+            <div class="sec_stu">
+                <p style="padding-left: 150px; font-size: 30px; color: darkgreen;"><b>STUDY</b></p>
+            </div>
+            <div class="sec_col">
+                <div class="navi">
+                    <nav>
+                        <ul>
+                            <li><a href="" style="text-decoration: none; color: gray;">HOME</a></li>
+                            <li><a href="" style="text-decoration: none; color: gray;">COURSES</a></li>
+                            <li><a href="" style="text-decoration: none; color: gray;">GALLERY</a></li>
+                            <li><a href="" style="margin-right: 170px; text-decoration: none; color: gray;">CONTACT</a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+    </header>
+
+    <div class="ph">
+        photo
+    </div>
+
+    <div class="pgbody_3">
+        <div class="img1"><img src="./assign6_img/11.jpeg" alt="" width="300px" height="200px"></div>
+        <div class="img2"><img src="./assign6_img/12.jpeg" alt="" width="300px" height="200px"></div>
+        <div class="img3"><img src="./assign6_img/13.jpeg" alt="" width="300px" height="200px"></div>
+        <div class="img4"><img src="./assign6_img/14.jpeg" alt="" width="300px" height="200px"></div>
+        <div class="img5"><img src="./assign6_img/15.jpeg" alt="" width="300px" height="200px"></div>
+        <div class="img6"><img src="./assign6_img/16.jpeg" alt="" width="300px" height="200px"></div>
+        <div class="img7"><img src="./assign6_img/17.jpeg" alt="" width="300px" height="200px"></div>
+        <div class="img8"><img src="./assign6_img/13.jpeg" alt="" width="300px" height="200px"></div>
+    </div>
+    <footer>
+        <div class="foot">
+            <div class="stu">
+                <p style="font-size: 30px;">Study</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem officiis tenetur maxime repellat asperiores</p>
+            </div>
+        
+            <div class="get">
+                <p>GET IN TOUCH</p>
+                <P>+919988775214</P>
+                <P>www.devitems.com</P>
+                <p>ur addrress goes here,street</p>
+            </div>
+        </div>
+        <hr style="color: brown;">
+        <div class="last">
+            <pre style="font-family: 'Times New Roman', Times, serif;">& 2022 study. Made with heart By Abhishek Ganesh                                                                                                                                                               Privacy Policy,Terms & conditions</pre>
+        </div>
+    </footer>
+
+
+    <!-- page 4 -->
+
+    <header>
+        <div class="fir">
+            <!-- <div id="query">
+                <p>Have any questions? +919256564789</p>
+            </div> -->
+            <div id="login">
+                <a href=""><input type="button" value="login" style="border: none; background-color: darkblue; color: white; font-size: 15px;"></a>
+                <a href=""><input type="button" value=" Register" style="border: none; background-color:darkblue; color: white; font-size: 15px; margin-right: 130px;"></a>
+            </div>
+        </div>
+        <div class="sec_col">
+            <div class="sec_stu">
+                <p style="padding-left: 150px; font-size: 30px; color: darkgreen;"><b>STUDY</b></p>
+            </div>
+            <div class="sec_col">
+                <div class="navi">
+                    <nav>
+                        <ul>
+                            <li><a href="" style="text-decoration: none; color: gray;">HOME</a></li>
+                            <li><a href="" style="text-decoration: none; color: gray;">COURSES</a></li>
+                            <li><a href="" style="text-decoration: none; color: gray;">GALLERY</a></li>
+                            <li><a href="" style="margin-right: 170px; text-decoration: none; color: gray;">CONTACT</a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+    </header>
+
+    <div class="ph">
+        photo
+    </div>
+
+    <div class="lst">
+        <div class="cont">
+            <h2>CONTACT INFO</h2>
+            <p>+918585797854</p>
+            <p>kadkfhu@email.com</p>
+            <p>House 09, Road 32, Mohammadpur, Dhihda-1200 UK</p>
+            <br>
+            <h2>SOCIAL MEDIA</h2>
+        </div>
+
+        <div class="feedback">
+            <h2>SEND YOUR MESSAGE</h2>
+            <input type="text" name="name" id="name" placeholder="Name">
+            <input type="email" name="email" id="email" placeholder="email">
+            <br><br>
+            <textarea name="message" id="message" placeholder="Message" style="width: 338px; height: 66px;"></textarea><br>
+            <button type="submit" style="background-color: darkblue; color: white; width: 120px; height: 30px;">SUBMIT</button>
+        </div>
+    </div>
+
+
+    <footer>
+        <div class="foot">
+            <div class="stu">
+                <p style="font-size: 30px;">Study</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem officiis tenetur maxime repellat asperiores</p>
+            </div>
+        
+            <div class="get">
+                <p>GET IN TOUCH</p>
+                <P>+919988775214</P>
+                <P>www.devitems.com</P>
+                <p>ur addrress goes here,street</p>
+            </div>
+        </div>
+        <hr style="color: brown;">
+        <div class="last">
+            <pre style="font-family: 'Times New Roman', Times, serif;">& 2022 study. Made with heart By Abhishek Ganesh                                                                                                                                                               Privacy Policy,Terms & conditions</pre>
+        </div>
+    </footer>
+
 </body>
 </html>
