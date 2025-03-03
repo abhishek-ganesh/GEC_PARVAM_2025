@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FLEX</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+  
+  <style>
+    body{
+    background-color: aqua;
+  }
+
+    .main{
+      justify-content: center;
+      align-items: center;
+      /* justify-items: center; */
+      background-color: aqua;
+      justify-items:center;
+    }
+    .container1{
+      width: 900px;
+      height: 300px;
+      display: flex;  
+     }
+
+    .square1{
+      border: 1px solid aqua;
+      width: 300px;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: end;
+      padding-bottom: 30px;
+      background-color: white;
+      margin: 10px;
+    }
+    .content{
+      width: 300px;
+      display: flex;
+      justify-content: center;
+      font-size:larger;
+      font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+      background-color: white;
+    }
+
+
+    .blank{
+      width: 900px;
+      height: 50px;
+    }
+
+    .container2{
+      width: 900px;
+      height: 300px;
+      display: flex;
+      }
+
+    .square2{
+      border: 1px solid aqua;
+      width: 300px;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: end;
+      padding-bottom: 30px;
+      background-color: white;
+      margin: 10px;
+    }
+
+    .a{
+      border: 1px solid aqua;
+      width: 200px;
+      height: 50px;
+      text-align: center;
+      align-content: center;
+    }
+
+    .square12{
+      border: 1px solid aqua;
+      width: 300px;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: end;
+      padding-bottom: 30px;
+      background-color: white;
+      margin: 10px;
+      
+    }
+
+
+
+    .ab{
+      border: 1px solid aqua;
+      width: 200px;
+      height: 50px;
+      text-align: center;
+      align-content: center;
+      background-color: purple;
+      color: white;
+    }
+  </style>
+</head>
+
+
+
+
+<body>
+      <h1><center>Open Positions</center></h1>
+  <div class="main">
+        <div class="container1">
+
+          <div class="square1">
+            <div class="content"><i class="fa-solid fa-paintbrush"> Design</i></div>
+            <div class="a">4 open positions</div>
+          </div>
+
+          <div class="square12">
+            <div class="content"><i class="fa-solid fa-code"> Engineering</i></div>
+            <div class="ab">8 open positions</div> 
+          </div>
+          
+          <div class="square1">
+            <div class="content"><i class="fa-solid fa-gear"> Operation</i></div> 
+            <div class="a">2 open positions</div>
+          </div>
+        </div>
+
+        <div class="blank"></div>
+
+        <div class="container2">
+
+          <div class="square2">
+            <div class="content"><i class="fa-solid fa-users"> People</i></div> 
+            <div class="a">6 open positions</div>    
+          </div>
+
+          <div class="square2">
+            <div class="content"><i class="fa-solid fa-clipboard"> Sales</i></div> 
+            <div class="a">7 open positions</div> 
+          </div>
+
+          <div class="square2">
+            <div class="content"><i class="fa-solid fa-graduation-cap"> University</i></div> 
+            <div class="a">8 open positions</div>    
+          </div>
+        </div>
+      </div>
+</body>
+</html>

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>1.we can change HTML content</h1>
+    <p id="demo1">lorem</p>
+    <button onclick="document.getElementById('demo1').innerText='js will change HTML content'">Click Me</button>
+
+    <h1>2.we can change color</h1>
+    <p id="demo2">COLOR</p>
+    <button onclick="document.getElementById('demo2').style.background='red'">click for color change</button>
+
+    <!-- <h1>3.we can add image</h1>
+    <img src="./dodge.jpg" alt=""> -->
+
+    <br><br>
+    <h1>4.we can show the html code</h1>
+    <p id="demo4" style="display: none;">lorem</p>
+    <button type="button" onclick="document.getElementById('demo4').style.display='block'">Click Me</button>
+
+    <h1>we can change attribute</h1>
+    <img src="./off.jpg" alt="" width="100px" height="100px"
+    id="bulb_img">
+
+    <button type="button" onclick="document.getElementById('bulb_img').src='./on.jpg'">turn on</button>
+    <button type="button" onclick="document.getElementById('bulb_img').src='./off.jpg'">turn off</button>
+
+</body>
+</html>
