@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>looping statements</h1>
+    <p>1. for loop 
+        //- for (ini; con; inc/dec){}</p>
+    <p>2. while loop 
+        //ini ex: i=0
+        while(condtion){
+            //code
+            //inc/dec}</p>
+    <p>3. do while
+        ini
+        do{
+            //code
+            //ini/dec
+        }while(condtion);</p>
+    <p>4. for in
+        for (item of iterable){
+            //code
+
+        }
+    </p>
+    <p>5. for of</p>
+
+
+    <script>
+
+        //1. for loop
+        // let array1= ["item1","item2","item3","item4"];
+        // let len = array1.length
+        // console.log(len);
+        // for(let i=0; i<4; i++){
+        //     console.log(array1[i]);
+        // }
+
+        // let array1= ["item1","item2","item3","item4"];
+        // let len = array1.length
+        // console.log(len);
+        // for(let i=2; i<4; i++){
+        //     console.log(array1[i]);
+        // }
+
+
+        //2. while loop
+        // let array1= ["item1","item2","item3","item4"];
+        // let j=0;
+        // while(j < array1.length){
+        //     console.log(array1[j]);
+        //     j++;
+        // }
+
+        // let array1= + prompt("enter number");
+        // let i = 0;
+        // while(i <= array1){
+        //     console.log(i);
+        //     i++;
+        // }
+
+
+
+
+        //3. do while
+        // let a = + prompt("enter a number");
+        // let var = 10;
+
+        // do{
+        //      console.log(i);
+        //     i++;
+        // } while(i <= array1)    not get output
+
+
+
+
+        // do{
+        //     const inputVar = +prompt("enter a number");
+        //     if(inputVar === 20){
+        //         break;}
+
+        //     } while(true);
+
+
+
+        //4. for of
+        // let new_array = [12, 13, 14, 15, 16];
+        // for (let item of new_array){
+        //     console.log(item);
+        // }
+
+        // let new_array = ["first","second","third","fourth", "fivth"];
+        // for (let item of new_array){
+        //     console.log(item);
+        // }
+
+
+        //5.for in
+        // let new_array = [12, 13, 14, 15, 16];
+        // for (let item in new_array){
+        //     console.log(item);
+        // }
+
+        let new_array = [12, 13, 14, 15, 16];
+        for (let item in new_array){
+            console.log(item + "- " +new_array[item]);
+        }
+
+    </script>
+</body>
+</html>
