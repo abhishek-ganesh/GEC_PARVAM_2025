@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Strings in JS</h1>
+    <p>1.length</p>
+    <p>2.slice</p>
+    <p>3.substrings</p>
+    <p>4.substr</p>
+    <p>5.replace</p>
+    <p>6.toUpperCase()</p>
+    <p>7.toLowerCase()</p>
+    <p>8.trim()</p>
+    <p>9.indexof()</p>
+    <p>10.startswitch()</p>
+    <p>11.endswitch()</p>
+    <p>12.includes()</p>
+
+
+    <script>
+       // let str1 = "hello world";
+        // console.log(str1);
+        // console.log(str2);
+        // console.log(typeof str1);
+
+
+
+        //1.Strings
+        // let str1 = "Hello World";
+        // const len = str1.length
+        // console.log(`The length of string ${str1} is : ${len}`);
+        // console.log("the length fo string", + str1 + "is : " +len);
+        // console.log("the length fo string", str1 , "is : ", len);
+
+
+        // let str1 = '123456788';
+        // const len = str1.length
+        // console.log(`The length of string ${str1} is : ${len}`);
+        // console.log("the length fo string", + str1 + "is : " +len);
+        // console.log("the length fo string", str1 , "is : ", len); //   o/p 9
+
+
+
+        // 2.slice
+
+        // let str2 = "javascript"
+        // let str3 = str2.slice(2,7);
+        // console.log(`The sliced string is : ${str3}`)  // o/p vascr
+
+        let str2 = "javascript"       //9876543210
+        let str3 = str2.slice(-8,-3); //javascript
+        console.log(`The sliced string is : ${str3}`)  // o/p vascr
+        console.log(str2[5]);
+
+        //substring
+
+        let str4 = "hello javascript";
+        let str5 = str4.substring(2,7);   // start from index 2 and end upto index 7
+        console.log(`the string is ${str5}`);
+        console.log(`the string is ${str5.substring(-13, -9)}`);
+
+
+        //substr
+
+        let str6 = "hello world"
+        let str7 = str6.substr(2,7); // 2 is starting index and 7 is length
+        console.log(`the string is ${str7}`);
+        console.log(`the string is ${str7.substr(-6, 9)}`);
+
+
+        // replace
+        let str8 = "java script";
+        let str9 = str8.replace("java", "python");
+        console.log(`the string is ${str9}`);
+
+        // upper case
+        let str10 = "java script";
+        let str11 = str10.toUpperCase();
+        console.log(`the string is ${str11}`);
+
+        // low case
+        let str12 = "JAVASRCIPT";
+        let str13 = str12.toLowerCase();
+        console.log(`the string is ${str13}`);
+
+
+        //trim
+        let str14 = "     javascript     ";
+        let str15 = str14.trimStart();
+        let str16 = str14.trimEnd();
+        console.log(`the string is ${str15}`);
+        console.log(`the string is ${str16}`);
+
+        //indexof()
+
+        let str17 = "hello javascript";
+        let index = str17.indexOf("e");
+        console.log(`the index is ${index}`);
+
+        //startswitch
+        let str18 = "hello script";
+        let res =str18.startsWith("ello") // o/p false because word starts with h
+        console.log(`the results is ${res}`);
+
+        //endswith
+        let srt19 = "hello script";
+        let end = srt19.endsWith("script"); //o/p true because it ends with the script
+        console.log(`the result is ${end}`);
+
+        //includes
+        let str20 = "hello script";
+        let str21 = str20.includes("j");
+        console.log(`the string is ${str21}`);
+
+        //concat
+        let str22 = "hello";
+        let str23 = str22.concat(" javascript");
+        console.log(`the string is ${str23}`);
+
+    </script>
+
+    
+</body>
+</html>
