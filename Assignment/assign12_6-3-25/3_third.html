@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Table using for...in</title>
+    <style>
+        table {
+            width: 50%;
+            border-collapse: collapse;
+            margin: 20px 0;
+        }
+        th, td {
+            border: 1px solid black;
+            padding: 8px;
+            text-align: left;
+        }
+    </style>
+</head>
+<body>
+    <h1>table created using for in</h1>
+    <table id="dataTable">
+        <tr>
+            <th>Key</th>
+            <th>Value</th>
+        </tr>
+    </table>
+
+    <script>
+        // Example object
+        const data = {
+            Name: "Abhishek Ganesh",
+            Age: 22,
+            Country: "India",
+            Occupation: "Student"
+        };
+
+        // Get the table reference
+        let table = document.getElementById("dataTable");
+
+        // Loop through the object and create table rows
+        for (let key in data) {
+            let row = document.createElement("tr");
+
+            let cell1 = document.createElement("td");
+            cell1.textContent = key;
+
+            let cell2 = document.createElement("td");
+            cell2.textContent = data[key];
+
+            row.appendChild(cell1);
+            row.appendChild(cell2);
+            table.appendChild(row);
+        }
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Table using for...of</title>
+    <style>
+        table {
+            width: 50%;
+            border-collapse: collapse;
+            margin: 20px 0;
+        }
+        th, td {
+            border: 1px solid black;
+            padding: 8px;
+            text-align: left;
+        }
+    </style>
+</head>
+<body>
+    <h1>table created using for off</h1>
+    <table id="dataTable">
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Age</th>
+                <th>Country</th>
+            </tr>
+        </thead>
+        <tbody>
+        </tbody>
+    </table>
+
+    <script>
+        // Example array of objects
+        const users = [
+            { name: "Abhishek Ganesh", age: 23, country: "India" },
+            { name: "Guru Prasad", age: 20, country: "India" },
+            { name: "tejas", age: 22, country: "India" }
+        ];
+
+        // Get the table body reference
+        let tbody = document.querySelector("#dataTable tbody");
+
+        // Loop through the array using for...of
+        for (let user of users) {
+            let row = document.createElement("tr");
+
+            let cell1 = document.createElement("td");
+            cell1.textContent = user.name;
+
+            let cell2 = document.createElement("td");
+            cell2.textContent = user.age;
+
+            let cell3 = document.createElement("td");
+            cell3.textContent = user.country;
+
+            row.appendChild(cell1);
+            row.appendChild(cell2);
+            row.appendChild(cell3);
+            tbody.appendChild(row);
+        }
+    </script>
+
+</body>
+</html>
