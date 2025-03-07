@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>how to clone array</h1>
+    <p>1.spread operator(...)</p>
+    <p>2.slice</p>
+    <p>3.concat</p>
+
+    <script>
+        const array1 = [12,13,14,15,16];
+        const array2 = array1;
+        array1.push(23);
+        console.log("array1", array1);
+        console.log("array2", array2);
+
+        const array2 = [...array1];
+        array1.push(24)
+        console.log("array1:", array1);
+        console.log("array2:", array2);
+
+        
+    </script>
+</body>
+</html>
