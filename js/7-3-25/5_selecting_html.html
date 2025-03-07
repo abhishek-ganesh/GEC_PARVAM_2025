@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Selecting the Html</h1>
+    <p id="first_p">1. using getElementById</p>
+    <p class="sec_p">2. using grtElementByClassName</p>
+    <p class="sec_p">2. using grtElementByClassName</p>
+    <p class="sec_p">2. using grtElementByClassName</p>
+
+    <p id="thir_p">3.using querySelector</p>
+
+
+    <script>
+        //1.using get element by id 
+        const first_p = document.getElementById("first_p");
+        first_p.style.color= "red";
+
+        //2. using get element by class name
+        const sec_p = document.getElementsByClassName("sec_p");
+        console.log(sec_p);
+        sec_p[0].style.color = "blue";
+
+        //using query 
+        const thir_p = document.querySelector("#thir_p");
+        // const thir_p = document.querySelector(".thir_p");
+        thir_p.style.color="green";
+        
+
+    </script>
+</body>
+</html>

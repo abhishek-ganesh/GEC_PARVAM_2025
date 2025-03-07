@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>this keyword</h1>
+    <script>
+        // const obj1 = {
+        //     firstName:"Abhishek",
+        //     lastName:"Ganesh",
+        //     age:22,
+        //     about: function (){
+        //         console.log(this);
+        //     }
+        // }
+        // obj1.about();
+
+        // const obj1 = {
+        //     firstName:"Abhishek",
+        //     lastName:"Ganesh",
+        //     age:22,
+        //     about: function (){
+        //         console.log(this.firstName+" "+this.lastName);
+        //     }
+        // }
+        // obj1.about();
+
+
+        const obj1 = {
+            firstName:"Abhishek",
+            lastName:"Ganesh",
+            age:22,
+            about: () => {
+                console.log(this.firstName+" "+this.lastName);
+            }
+        }
+        obj1.about();
+    </script>
+</body>
+</html>

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>selecting multiple elements</title>
+</head>
+<body>
+    <h1>Selecting the Html</h1>
+    <p>1. using grtElementByClassName</p>
+    <p>2. using querySelector - we can use </p>
+
+    <div class="child">lorem</div>
+    <div class="child">lorem</div>
+    <div class="child">lorem</div>
+
+    <div class="child1">lorem1</div>
+    <div class="child1">lorem1</div>
+    <div class="child1">lorem1</div>
+
+    <script>
+        //1. 
+        const res = document.getElementsByClassName(".child");
+        console.log(res);
+        for (let i of res){
+            i.style.backgroundColor= "yellow";
+            // i.style.fontSize= "20px";
+            console.log(res);
+        }
+
+        // res.forEach((curele)=> {
+        //     console.log(curele);
+        // })
+
+        //2. 
+        const res1 = document.querySelectorAll(".child1");
+        console.log(res1);
+        res1.forEach((curEle)=> {
+            curEle.style.backgroundColor="red";
+        })
+    </script>
+
+
+
+
+
+</body>
+</html>
