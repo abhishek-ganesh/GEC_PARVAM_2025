@@ -1,34 +1,38 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Math</title>
 </head>
+
 <body>
-    <h1>MATH</h1>
+    <h1>Math</h1>
+
     <script>
         //math library
         console.log(Math);
         console.log(Math.PI);
-
-
         let var1 = 49;
-        console.log("sqrt: ", Math.sqrt(var1));//7
-        console.log("2^8 :", Math.pow(2,3)); //2*2*2
-        console.log("floor: ",Math.floor(3.82));  //3 remove digit after "."
-        console.log("floor: ",Math.floor(3.9999999999999999));//4 after .15digit consider as next number
-        console.log("floor:", Math.floor(-2.45));  //-3 consider next digit
-        console.log("ceil: ",Math.ceil(5.82)); //6 consider next digit
-        console.log("ceil: ",Math.ceil(-5.82)); //-5 only consider the digit before "."
-        console.log("Round: ",Math.round(6.82)); // 7 round off
-        console.log("Round: ",Math.round(-6.82));// -7 round off
+        console.log("Sqrt of 49: ", Math.sqrt(var1));
+        console.log("2^3 :", Math.pow(2, 3)); //2*2*2 
+        console.log("floor: ", Math.floor(3.55)); //3
+        console.log("floor: ", Math.floor(3.99)); //3
+        console.log("floor: ", Math.floor(3.999999999999999999999999999999)); //4
+        console.log("floor: ", Math.floor(-2.44)); //-3
 
-        //function to remove decimal is floor
-        console.log("Random: ",Math.random());// 0-1
-        console.log("Random: ", Math.floor(Math.random()*10))
-        console.log("Random: ", Math.ceil(Math.random()*10));
+        console.log("Ceil: ", Math.ceil(3.1)); //4
+        console.log("Ceil: ", Math.ceil(-6.91)); //-6
 
+        console.log("Round: ", Math.round(2.3));//2
+        console.log("Round: ", Math.round(21.8));//22
+        console.log("Round: ", Math.round(-21.8));//-22
+        console.log("Round: ", Math.round(-21.2));//-21
+
+        console.log("random: ", Math.random()); //0 - <1
+        console.log("random: ", Math.floor(Math.random() * 10)) + 1; 
     </script>
 </body>
+
 </html>
