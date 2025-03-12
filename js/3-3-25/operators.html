@@ -1,61 +1,72 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Operators</title>
+    <style>
+        body {
+            padding: 50px;
+        }
+    </style>
 </head>
+
 <body>
-    <h1>operators</h1>
-   <dl>
-    <dt> arth operators</dt>
-    <dd>+ ,- ,*, /, %, **</dd>
+    <h1>Operators in JS</h1>
+    <dl>
+        <dt>1. Arth Operators</dt>
+        <dd>+ , - , * , / , % , **</dd>
     </dl>
-   <dl>
-    <dt>assign operators</dt>
-    <dd>=, +=, -=, *=, /=, %=, *=, **= </dd>
+    <dl>
+        <dt>2. Assign Operators</dt>
+        <dd>=, +=, -=, /= , %= , *= ,**= </dd>
     </dl>
-   <dl>
-    <dt>comp operators</dt>
-    <dd>==, ===, !=, !==, <, >, <=, <= </dd>
+    <dl>
+        <dt>3. Comp Operators</dt>
+        <dd>== - compare the values, === - will compare the datatype, != - compare the values, !== - will compare the
+            datatype, <,>, <=,>=</dd>
     </dl>
-   <dl>
-    <dt>bitw operators</dt>
-    <dd>&, |, ~, ^</dd>
+    <dl>
+        <dt>4. Bitw Operators</dt>
+        <dd>&, |, ~ , ^</dd>
     </dl>
-   <dl>
-    <dt>logi operators</dt>
-    <dd> &&, ||, !</dd>
+    <dl>
+        <dt>5. Logi Operators</dt>
+        <dd>&&, ||, !</dd>
     </dl>
-   <dl>
-    <dt>ternary operators</dt>
-    <dd>? :</dd>
+    <dl>
+        <dt>6. Ternary Operator</dt>
+        <dd>? :</dd>
     </dl>
 
     <script>
-        // bitwise operator
-        //&
-        // let var1=2;//010
-        // let var2=3;//011
-        // console.log("& =",var1&var2);//010(multiply)
+        let var1 = 121; //number
+        let var2 = "121"; //string
+        console.log("== : ", var1 == var2);
+        console.log("=== : ", var1 === var2);
+        console.log("!= : ", var1 != var2);
+        console.log("!== : ", var1 !== var2);
 
-        //|
-        // let var1=2;//010
-        // let var2=3;//011
-        // console.log("|=", var1|var2);//011
+        console.log("-------------------------------------");
+        console.log("Bitwise");
+        let var3 = 3; // 011
+        let var4 = 2; // 010
 
-        //~
-        let var1=5;
-        // let var2=3;
-        console.log("~",~var1);
+        console.log("&: ", var3 & var4);
+        console.log("|: ", var3 | var4);
+        console.log("~: ", ~var4);
+        console.log("^: ", var3 ^ var4);
+        let var5 = 3;
+        let var6 = 2;
+        let var7 = 3;
+        let var8 = 6;
+        console.log("&&: ", var5 && var6);
+        console.log((var5 > var6) && (var7 < var8))
 
-        //^
-        // let var1=2;
-        // let var2=3;
-        // console.log("^",var1^var2);
-        
+        console.log("? : - ", (6 > 13) ? "Yes it is" : "Not");
+
     </script>
-
-
 </body>
+
 </html>

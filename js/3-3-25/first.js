@@ -1,3 +1,3 @@
 function handleExternalClick(){
-    document.getElementById('demo').innerText='Hello External JS';
+    document.getElementById('demo').innerText='Hello External JS'
 }

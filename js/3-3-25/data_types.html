@@ -1,69 +1,68 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Data types</title>
 </head>
+
 <body>
-    <!-- data types -->
-     <h2>number</h2>
-     <h2>string</h2>
-     <h2>boolean</h2>
-     <h2>undifined</h2>
-     <h2>null</h2>
-     <h2>bigint</h2>
-     <h2><object/h2>
-     <h2>symbol</h2>
+    <!-- Data types -->
+    <h3>1. Number</h3>
+    <h3>2. String</h3>
+    <h3>3. boolean</h3>
+    <h3>4. undefined</h3>
+    <h3>5. null</h3>
+    <h3>6. Bigint</h3>
+    <h3>7. Object</h3>
+    <h3>8. Symbol</h3>
 
-
-     <script>
-        //1.number
+    <script>
+        //1.Number
         //var, let, const
         let a = 12;
-        console.log("value of a" ,a);
-        console.log("type of :", typeof (a));
-        
-        //2.string
-        let b = "hello";
-        console.log("value of b" ,b);
-        console.log("type of :", typeof b);
+        console.log("value of a : ", a);
+        console.log("Type of a : ", typeof a);
 
-        //3.boolean
-        let c = true;
-        console.log("value of c" ,c);
-        console.log("type of ", typeof c);
+        //2. String
+        let b = "Hello";
+        console.log("value of b : ", b);
+        console.log("Type of b : ", typeof b);
 
-
-        //4.undefined
-        let d = undefined;
-        console.log("value of d" ,d);
-        console.log("type of :", typeof d);
-
-        //5.null
-        let e = null;
-        console.log("value of e" ,e);
-        console.log("type of :", typeof e);
+        //4. undefined
+        let c;
+        console.log("The value of c is : ", c);
+        console.log("Type of c : ", typeof c);
+        c = 30;
+        console.log("The value of c is : ", c);
+        console.log("Type of c : ", typeof c);
 
 
-        //6.bigint
-        let f = BigInt("121")
-        console.log("value of f" ,f);
-        console.log("type of :", typeof f);
+        //5. null
+        let d = null;
+        console.log("The value of d is : ", d);
+        console.log("Type of d : ", typeof d);
 
+        //6. Bigint
+        //let e = BigInt("121");
+        let e = 121n;
+        console.log("The value of e is : ", e);
+        console.log("Type of e : ", typeof e);
 
-        //7.Object
-        let obj = [1,2,3,4,5];
-        console.log("value of obj :" ,obj);
-        console.log("type of :", typeof obj);
+        //7. Object
+        let obj = [1, 2, 3, 4, 5];
+        console.log("The value of obj : ", obj);
+        console.log("The Type of obj : ", typeof obj);
 
         let obj1 = {
             firstName: "some",
-            lastName: "one"
+            lastName: "thing"
         }
-        console.log("value of obj1" ,obj1);
-        console.log("type of :", typeof obj1);
+        console.log("The value of obj1 : ", obj1);
+        console.log("The Type of obj1 : ", typeof obj1);
 
-     </script>
+    </script>
 </body>
+
 </html>
