@@ -1,21 +1,24 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Text Content</title>
 </head>
-<body>
-    <h1>Text content</h1>
-    <p class="ptag"> Lorem ipsum dolor sit <span> elit. Quia, assumenda.</span></p>
 
+<body>
+    <h1>Text Content</h1>
+    <p class="ptag">Lorem ipsum <span style="display: none;">adipisicing elit</span>
+        praesentium
+    </p>
     <script>
         const ptag = document.querySelector(".ptag");
-        console.log(ptag.innertext);
+        console.log(ptag.innerText);
         console.log(ptag.textContent);
-        // ptag.innertext = "hello";
-        // ptag.textContent= "hii";
+        //ptag.innerText = "Hello";
+        //ptag.textContent = "Hello";
     </script>
-
 </body>
+
 </html>
