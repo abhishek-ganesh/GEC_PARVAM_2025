@@ -1,0 +1,14 @@
+python -m venv crud_venv
+crud_venv\scripts\activate
+python -m pip install Django
+python.exe -m pip install --upgrade pip
+pip freeze // 
+django-admin --version
+python manage.py startapp std_crd
+
+python manage.py runserver
+
+
+
+
+pyhton manage.py make migration
