@@ -39,7 +39,10 @@ class Student1{
 public class ConstructorInJava {
 
 	public static void main(String[] args) {
-		Student1 std1 = 
+		Student1 std1 = new Student1(01, "abhi", 400.0);
+		std1.display();
+		Student1 std2 = new Student1();
+		std2.display();
 	}
 
 }
