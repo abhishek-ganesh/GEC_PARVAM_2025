@@ -1,0 +1,12 @@
+authentication architecture
+============================
+
+components:
+=============
+1.SecurityContextHolder
+2.Security Context
+3.Authentication
+4.GrandAuthority
+5.ProviderManager
+6.AuthenticationEntryPoint
+7.AbstractAuthenticationProcessingFilter
